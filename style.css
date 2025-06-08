@@ -1,22 +1,53 @@
-/* Galaxy Theme Background */
-body {
+/* Global Settings */
+* {
+    box-sizing: border-box;
     margin: 0;
+    padding: 0;
+}
+
+body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: url('img/galaxy.jpg') no-repeat center center fixed;
     background-size: cover;
-    background-color: #000010; /* fallback */
+    background-color: #000010;
     color: #E0E0E0;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: rgba(0, 0, 50, 0.85);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    padding: 1em 0;
+}
+
+.navbar li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar li a:hover {
+    color: #87CEFA;
 }
 
 /* Header Section */
 header {
     text-align: center;
-    padding: 2em;
+    padding: 2em 1em;
     background-color: rgba(0, 0, 50, 0.75);
-    color: #FFFFFF;
 }
 
-/* Profile Image */
 header img {
     border-radius: 50%;
     border: 2px solid #aaa;
@@ -26,14 +57,18 @@ header img {
     margin-top: 10px;
 }
 
-/* Main Content */
+/* Main Content Container */
 main {
-    max-width: 800px;
+    max-width: 900px;
     margin: 2em auto;
     padding: 2em;
     background-color: rgba(0, 0, 0, 0.65);
     border-radius: 15px;
     box-shadow: 0 0 15px #6cc;
+}
+
+section {
+    margin-bottom: 2em;
 }
 
 /* Footer */
@@ -66,6 +101,7 @@ a:hover {
     overflow: hidden;
     box-shadow: 0 0 15px white;
     animation: float 5s infinite ease-in-out;
+    z-index: 1001;
 }
 
 #link-popup img {
