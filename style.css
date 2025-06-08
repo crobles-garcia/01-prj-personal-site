@@ -2,9 +2,10 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: url('galaxy.jpg') no-repeat center center fixed;
+    background: url('img/galaxy.jpg') no-repeat center center fixed;
     background-size: cover;
-    color: #E0E0E0; /* Soft silver */
+    background-color: #000010; /* fallback */
+    color: #E0E0E0;
 }
 
 /* Header Section */
