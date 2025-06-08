@@ -1,1 +1,7 @@
-/* Add you CSS here */
+
+/*Give the header a Navy background color and white text*/
+header {
+  background-color: navy;
+  color: white;
+  padding: 10px;
+  text-align: center;
